@@ -72,7 +72,7 @@ public class notas {
 	/**
 	 * Método para calcular nota 
 	 */
-	public void Calculonotas() {
+	public void CalculoNotas() {
 		acu1= uf1*0.35;
 		acu2 = uf2 * 0.35;
 		acu3 = uf3 * 0.30;
@@ -83,7 +83,7 @@ public class notas {
 	/**
 	 * Método para imprimir las notas por consola 
 	 */
-	public void Mostrar() {
+	public void MostrarNotas() {
 		//print ln lo que hace es que al terminar el print baja la linea
 		System.out.println(" notas introducidas son:");
 		System.out.println(" nota1 = " + uf1);
@@ -100,7 +100,7 @@ public class notas {
 	/**
 	 * Método para imprimir la nota en formato texto 
 	 */
-	public void aprobado() {
+	public void Aprobado() {
 		if(def<5 && def>=0) {
 			System.out.println("suspendio");
 		}else {
@@ -115,10 +115,10 @@ public class notas {
 	/**
 	 * Método para llamar a todos los demás
 	 * @see IngresaNotas() 
-	 * @see comprobacion() 
-	 * @see Calculonotas() 
-	 * @see Mostrar() 
-	 * @see aprobado() 
+	 * @see ComprobacionNotas() 
+	 * @see CalculoNotas() 
+	 * @see MostrarNotas() 
+	 * @see Aprobado() 
 	 */
 	public static void main(String[] args) {
 		// creamos mecanimos para llamar a cualquier metodo fuero de la clase
@@ -128,10 +128,10 @@ public class notas {
 		
 		fc.ComprobacionNotas();
 		
-		fc.Calculonotas();
+		fc.CalculoNotas();
 		
-		fc.Mostrar();
+		fc.MostrarNotas();
 		
-		fc.aprobado();
+		fc.Aprobado();
 	}
 }
